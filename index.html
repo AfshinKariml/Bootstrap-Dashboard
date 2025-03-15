@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container-fluid overflow-hidden">
+        <div class="row">
+            <div class="col-lg-2 d-none d-lg-block p-0">
+                <div class="d-flex flex-column shadow h-100 p-3 position-fixed w_inherit">
+                    <a href="#" class="d-flex gap-2 align-items-center text-decoration-none link-body-emphasis">
+                        <img src="img/Thinking.png" width="70" alt="">
+                        <span class="fs-4 fw-bold"> پنل کاربر عزیز</span>
+                    </a>
+                    <hr>
+                    <ul class="nav nav-pills d-block mb-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link d-flex gap-2 active">
+                                <i class="bi bi-house-door"></i>
+                                <span>خانه</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link d-flex gap-2 link-body-emphasis ">
+                                <i class="bi bi-speedometer2"></i>
+                                <span>داشبورد</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link d-flex gap-2 link-body-emphasis ">
+                                <i class="bi bi-bag"></i>
+                                <span>سفارش</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link d-flex gap-2 link-body-emphasis ">
+                                <i class="bi bi-book"></i>
+                                <span>دوره ها</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link d-flex gap-2 link-body-emphasis ">
+                                <i class="bi bi-person"></i>
+                                <span>مشتریان</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="dropdown">
+                        <a href="#" data-bs-toggle="dropdown"
+                            class="dropdown-toggle d-flex align-items-center gap-2 text-decoration-none link-body-emphasis">
+                            <img src="img/Profile.jpg" class="rounded-circle" width="32" height="32" alt="">
+                            <strong>افشین کریمی</strong>
+                        </a>
+                        <ul class="dropdown-menu shadow" data-popper-placement="top-end">
+                            <li>
+                                <a href="#" class="dropdown-item">پروژه جدید ...</a>
+                                <a href="#" class="dropdown-item">تنظیمات</a>
+                                <a href="#" class="dropdown-item">پروفایل</a>
+                                <hr>
+                                <a href="#" class="dropdown-item">خروج</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 p-0">
+                <nav class="navbar navbar-expand-lg border-bottom border-secondary border-opacity-10">
+                    <div class="container-fluid">
+                        <a href="#" class="navbar-brand">پیش خوان</a>
+                        <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-start d-lg-none" id="offcanvasNavbar">
+                            <div class="d-flex flex-column shadow overflow-y-auto h-100 p-3 ">
+                                <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+                                <a href="#"
+                                    class="d-flex gap-2 align-items-center text-decoration-none link-body-emphasis">
+                                    <img src="img/Thinking.png" width="70" alt="">
+                                    <span class="fs-4 fw-bold">پنل شما</span>
+                                </a>
+                                <hr>
+                                <ul class="nav nav-pills d-block mb-auto">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link d-flex gap-2 active">
+                                            <i class="bi bi-house-door"></i>
+                                            <span>خانه</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link d-flex gap-2 link-body-emphasis ">
+                                            <i class="bi bi-speedometer2"></i>
+                                            <span>داشبورد</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link d-flex gap-2 link-body-emphasis ">
+                                            <i class="bi bi-bag"></i>
+                                            <span>سفارش</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link d-flex gap-2 link-body-emphasis ">
+                                            <i class="bi bi-book"></i>
+                                            <span>دوره ها</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link d-flex gap-2 link-body-emphasis ">
+                                            <i class="bi bi-person"></i>
+                                            <span>مشتریان</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <hr>
+                                <div class="dropdown">
+                                    <a href="#" data-bs-toggle="dropdown"
+                                        class="dropdown-toggle d-flex align-items-center gap-2 text-decoration-none link-body-emphasis">
+                                        <img src="img/Profile.jpg" class="rounded-circle" width="32" height="32" alt="">
+                                        <strong>افشین کریمی</strong>
+                                    </a>
+                                    <ul class="dropdown-menu shadow" data-popper-placement="top-end">
+                                        <li>
+                                            <a href="#" class="dropdown-item">پروژه جدید ...</a>
+                                            <a href="#" class="dropdown-item">تنظیمات</a>
+                                            <a href="#" class="dropdown-item">پروفایل</a>
+                                            <a href="#" class="dropdown-item">خروج</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="px-3 py-4">
+                    <h2>
+                        افشین کریمی عزیز؛ خوش اومدی 🙌
+                    </h2>
+                    <div class="row row-gap-2 mt-4">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                            <div
+                                class="bg-info bg-gradient d-flex position-relative overflow-hidden align-items-center justify-content-between  rounded-3 px-3 py-4">
+                                <div>
+                                    <h5 class="fw-bold text-light text-nowrap">پیشرفت کاربر</h5>
+                                    <span class="text-light fs-3 text-nowrap">53%</span>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="117" height="51" viewBox="0 0 117 51"
+                                        fill="none">
+                                        <g filter="url(#filter0_f_3_639)">
+                                            <circle cx="107" cy="20" r="5" fill="#fff"></circle>
+                                        </g>
+                                        <path
+                                            d="M1 49.5L8.5 26.5L17 37L22 19.5L31 37L44.5 3L57.5 26.5L72 19.5L83.5 31L93.5 6.5L101 19.5H108"
+                                            stroke="#fff" stroke-width="2" stroke-linecap="round"></path>
+                                        <defs>
+                                            <filter id="filter0_f_3_639" x="97" y="10" width="20" height="20"
+                                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                                    result="shape"></feBlend>
+                                                <feGaussianBlur stdDeviation="2.5"
+                                                    result="effect1_foregroundBlur_3_639"></feGaussianBlur>
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div
+                                    class="position-absolute p-1 text-center bg-dark bg-opacity-25 bottom-0 start-0 w-100">
+                                    <a href="#" class="text-light text-decoration-none">اطلاعات بیشتر</a>
+                                    <i class="bi bi-arrow-left"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                            <div
+                                class="bg-danger bg-gradient d-flex position-relative overflow-hidden align-items-center justify-content-between  rounded-3 px-3 py-4">
+                                <div>
+                                    <h5 class="fw-bold text-light text-nowrap">دوره ها</h5>
+                                    <span class="text-light fs-3 text-nowrap">10</span>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="117" height="51" viewBox="0 0 117 51"
+                                        fill="none">
+                                        <g filter="url(#filter0_f_3_639)">
+                                            <circle cx="107" cy="20" r="5" fill="#fff"></circle>
+                                        </g>
+                                        <path
+                                            d="M1 49.5L8.5 26.5L17 37L22 19.5L31 37L44.5 3L57.5 26.5L72 19.5L83.5 31L93.5 6.5L101 19.5H108"
+                                            stroke="#fff" stroke-width="2" stroke-linecap="round"></path>
+                                        <defs>
+                                            <filter id="filter0_f_3_639" x="97" y="10" width="20" height="20"
+                                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                                    result="shape"></feBlend>
+                                                <feGaussianBlur stdDeviation="2.5"
+                                                    result="effect1_foregroundBlur_3_639"></feGaussianBlur>
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div
+                                    class="position-absolute p-1 text-center bg-dark bg-opacity-25 bottom-0 start-0 w-100">
+                                    <a href="#" class="text-light text-decoration-none">اطلاعات بیشتر</a>
+                                    <i class="bi bi-arrow-left"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                            <div
+                                class="bg-primary bg-gradient d-flex position-relative overflow-hidden align-items-center justify-content-between  rounded-3 px-3 py-4">
+                                <div>
+                                    <h5 class="fw-bold text-light text-nowrap">مجموع تیکت ها</h5>
+                                    <span class="text-light fs-3 text-nowrap">20</span>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="117" height="51" viewBox="0 0 117 51"
+                                        fill="none">
+                                        <g filter="url(#filter0_f_3_639)">
+                                            <circle cx="107" cy="20" r="5" fill="#fff"></circle>
+                                        </g>
+                                        <path
+                                            d="M1 49.5L8.5 26.5L17 37L22 19.5L31 37L44.5 3L57.5 26.5L72 19.5L83.5 31L93.5 6.5L101 19.5H108"
+                                            stroke="#fff" stroke-width="2" stroke-linecap="round"></path>
+                                        <defs>
+                                            <filter id="filter0_f_3_639" x="97" y="10" width="20" height="20"
+                                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                                    result="shape"></feBlend>
+                                                <feGaussianBlur stdDeviation="2.5"
+                                                    result="effect1_foregroundBlur_3_639"></feGaussianBlur>
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div
+                                    class="position-absolute p-1 text-center bg-dark bg-opacity-25 bottom-0 start-0 w-100">
+                                    <a href="#" class="text-light text-decoration-none">اطلاعات بیشتر</a>
+                                    <i class="bi bi-arrow-left"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                            <div
+                                class="bg-success bg-gradient d-flex position-relative overflow-hidden align-items-center justify-content-between  rounded-3 px-3 py-4">
+                                <div>
+                                    <h5 class="fw-bold text-light text-nowrap">موجودی حساب</h5>
+                                    <span class="text-light fs-3 text-nowrap">0 تومان</span>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="117" height="51" viewBox="0 0 117 51"
+                                        fill="none">
+                                        <g filter="url(#filter0_f_3_639)">
+                                            <circle cx="107" cy="20" r="5" fill="#fff"></circle>
+                                        </g>
+                                        <path
+                                            d="M1 49.5L8.5 26.5L17 37L22 19.5L31 37L44.5 3L57.5 26.5L72 19.5L83.5 31L93.5 6.5L101 19.5H108"
+                                            stroke="#fff" stroke-width="2" stroke-linecap="round"></path>
+                                        <defs>
+                                            <filter id="filter0_f_3_639" x="97" y="10" width="20" height="20"
+                                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                                    result="shape"></feBlend>
+                                                <feGaussianBlur stdDeviation="2.5"
+                                                    result="effect1_foregroundBlur_3_639"></feGaussianBlur>
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div
+                                    class="position-absolute p-1 text-center bg-dark bg-opacity-25 bottom-0 start-0 w-100">
+                                    <a href="#" class="text-light text-decoration-none">اطلاعات بیشتر</a>
+                                    <i class="bi bi-arrow-left"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border table-responsive border-secondary border-opacity-10 rounded-3 mt-4">
+                        <div class="p-2 border-bottom border-secondary border-opacity-10">
+                            <span class="fw-bold fs-4">وضعیت</span>
+                        </div>
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th class="text-nowrap">#</th>
+                                    <th class="text-nowrap">دوره</th>
+                                    <th class="text-nowrap">مدرس</th>
+                                    <th class="text-nowrap">تصویر</th>
+                                    <th class="text-nowrap">شروع</th>
+                                    <th class="text-nowrap">وضغیت</th>
+                                    <th class="text-nowrap">درصد یادگیری</th>
+                                </tr>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="text-nowrap">بوت استرپ 5</td>
+                                    <td class="text-nowrap">افشین کریمی</td>
+                                    <td><img src="img/Profile.jpg" class="rounded-circle" width="32" height="32"
+                                            alt="profile"></td>
+                                    <td class="text-nowrap">10 بهمن</td>
+                                    <td><span class="badge bg-success rounded-pill">گذرانده شده</span></td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-success" style="width: 100%;">100%</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="text-nowrap">انگولار ۱۹</td>
+                                    <td class="text-nowrap">افشین کریمی</td>
+                                    <td><img src="img/Profile.jpg" class="rounded-circle" width="32" height="32"
+                                            alt="profile"></td>
+                                    <td class="text-nowrap">18 فروردین </td>
+                                    <td><span class="badge bg-danger rounded-pill">گذرانده نشده</span></td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-danger" style="width: 1%;">0%</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td class="text-nowrap">جاوااسکریپت</td>
+                                    <td class="text-nowrap">افشین کریمی</td>
+                                    <td><img src="img/Profile.jpg" class="rounded-circle" width="32" height="32"
+                                            alt="profile"></td>
+                                    <td class="text-nowrap">21 دی </td>
+                                    <td><span class="badge bg-warning rounded-pill"> درحال یادگیری</span></td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-warning" style="width: 50%;">50%</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td class="text-nowrap">تیلویند</td>
+                                    <td class="text-nowrap">افشین کریمی</td>
+                                    <td><img src="img/Profile.jpg" class="rounded-circle" width="32" height="32"
+                                            alt="profile"></td>
+                                    <td class="text-nowrap">15 اردیبهشت</td>
+                                    <td><span class="badge bg-info rounded-pill">درحال یادگیری</span></td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" style="width: 25%;">25%</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="mt-4 d-flex justify-content-center">
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a href="" class="page-link">قبلی</a>
+                            </li>
+                            <li class="page-item ">
+                                <a href="" class="page-link">1</a>
+                            </li>
+                            <li class="page-item active">
+                                <a href="" class="page-link">2</a>
+                            </li>
+                            <li class="page-item ">
+                                <a href="" class="page-link">3</a>
+                            </li>
+                            <li class="page-item disabled">
+                                <a href="" class="page-link">بعدی</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="border border-secondary border-opacity-10">
+                        <div class="p-2">
+                            <span class="fw-bold fs-4">اطلاعات کاربر</span>
+                        </div>
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-6">
+                                <label for="first-name" class="form-label">نام</label>
+                                <input type="text" id="first-name" class="form-control" required>
+                                <div class="invalid-feedback">لطفاً نام خود را وارد کنید.</div>
+                            </div>
+            
+                            <div class="col-md-6">
+                                <label for="last-name" class="form-label">نام خانوادگی</label>
+                                <input type="text" id="last-name" class="form-control" required>
+                                <div class="invalid-feedback">لطفاً نام خانوادگی خود را وارد کنید.</div>
+                            </div>
+            
+                            <div class="col-md-6">
+                                <label for="email-user" class="form-label">ایمیل</label>
+                                <input type="email" id="email-user" class="form-control" required>
+                                <div class="invalid-feedback">لطفاً یک ایمیل معتبر وارد کنید.</div>
+                            </div>
+            
+                            <div class="col-md-6">
+                                <label for="job-user" class="form-label">شغل</label>
+                                <select class="form-select" id="job-user" required>
+                                    <option value="" selected disabled>لطفاً انتخاب کنید</option>
+                                    <option value="student">دانشجو</option>
+                                    <option value="developer">برنامه‌نویس</option>
+                                    <option value="freelancer">آزاد</option>
+                                    <option value="other">دیگر</option>
+                                </select>
+                                <div class="invalid-feedback">لطفاً شغل خود را انتخاب کنید.</div>
+                            </div>
+            
+                            <div class="col-md-6">
+                                <label for="photo-user" class="form-label">تصویر</label>
+                                <input type="file" class="form-control" id="photo-user">
+                            </div>
+            
+                            <div class="col-md-6">
+                                <label for="age-user" class="form-label">سن</label>
+                                <input type="number" class="form-control" id="age-user" required>
+                                <div class="invalid-feedback">لطفاً سن خود را وارد کنید.</div>
+                            </div>
+            
+                            <div class="col-12">
+                                <button class="btn btn-success w-100" type="submit">ثبت اطلاعات</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="dropdown position-fixed bottom-0 end-0 me-3 mb-3">
+            <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">تغییر تم</button>
+            <ul class="dropdown-menu">
+                <li>
+                    <button class="dropdown-item" id="lightModeBtn" data-bs-theme-value="light">روشن</button>
+                </li>
+                <li>
+                    <button class="dropdown-item" id="darkModeBtn" data-bs-theme-value="dark">تاریک</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
